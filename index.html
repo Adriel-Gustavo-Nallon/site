@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Tempo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1>⏳ Conversor de Tempo</h1>
+    <p>Converta segundos, minutos, horas e dias rapidamente.</p>
+</header>
+
+<main class="container">
+
+    <div class="card">
+        <h2>Digite um valor</h2>
+
+        <input type="number" id="valor" placeholder="Ex: 120">
+
+        <select id="unidade">
+            <option value="segundos">Segundos</option>
+            <option value="minutos">Minutos</option>
+            <option value="horas">Horas</option>
+            <option value="dias">Dias</option>
+        </select>
+
+        <button onclick="converterTempo()">
+            Converter
+        </button>
+    </div>
+
+    <div class="resultado">
+        <h2>Resultado</h2>
+
+        <p id="segundos">Segundos: 0</p>
+        <p id="minutos">Minutos: 0</p>
+        <p id="horas">Horas: 0</p>
+        <p id="dias">Dias: 0</p>
+    </div>
+
+</main>
+
+<footer>
+    <p>Projeto desenvolvido com HTML, CSS e JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
